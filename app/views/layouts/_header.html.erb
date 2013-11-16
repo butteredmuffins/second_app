@@ -17,8 +17,9 @@
           </li>
           <li><% if !user_signed_in? %> 
             <%= link_to "Sign in", user_session_path %>
-            <% end %>
           </li>
+          <li><%= link_to "Sign up", new_user_registration_path %>
+            <% end %> </li>
         </ul>
       </nav>
     </div>
