@@ -1,6 +1,7 @@
 SecondApp::Application.routes.draw do
   devise_for :users
   root 'static_pages#home'
+  match '/profile', to: 'static_pages#my_profile', via: 'get'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
